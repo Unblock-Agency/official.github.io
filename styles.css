@@ -82,5 +82,6 @@ a {
         align-items: flex-end;
         overflow: visible;
         background-color: black;
+        border-radius: 5px;
     }
 }
