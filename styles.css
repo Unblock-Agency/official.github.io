@@ -16,7 +16,9 @@ a {
 }
 
 .container {
-    margin: 0 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px 32px;
 }
 
 /*navbar*/
@@ -29,12 +31,11 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 32px;
+    padding: 8px 32px;
 }
 
-.logo {
-    font-size: larger;
-    font-weight: bolder;
+img {
+    max-width: 175px;
 }
 
 .hamburger .icon {
@@ -57,9 +58,7 @@ a {
     .navbar .container {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-        gap: 16px;
-        max-height: 60px;
+        align-items: center;
     }
 
     .nav {
@@ -78,7 +77,8 @@ a {
         flex-direction: column;
         gap: 16px;
         padding: 16px;
-        margin-right: -16px;
+        margin-bottom: -270px;
+        margin-right: -8px;
         align-items: flex-end;
         overflow: visible;
         background-color: black;
