@@ -6,17 +6,23 @@
 
 body {
     font-family:'Courier New', Courier, monospace;
-    color: black;
+    color: white;
     line-height: 1.5;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
+.container {
+    margin: 0 32px;
+}
+
+/*navbar*/
+
 .navbar {
-    background-color: silver;
+    background-color: black;
 }
 
 .navbar .container {
@@ -31,7 +37,50 @@ a {
     font-weight: bolder;
 }
 
-.menu {
+.hamburger .icon {
+    color: white
+}
+
+.nav {
     display: flex;
+}
+
+.nav #menu {
+    display: none;
     gap: 16px;
+    padding: 0 16px;
+}
+
+/*for smaller screen*/
+
+@media(max-width: 948px) {
+    .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 16px;
+        max-height: 60px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav #menu {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+        margin-right: -16px;
+        align-items: flex-end;
+        overflow: visible;
+        background-color: black;
+    }
 }
